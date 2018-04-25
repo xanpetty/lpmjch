@@ -2,5 +2,7 @@
 
 The book's website is here if you want the actual code: http://lpmj.net/3rdedition/
 
-This repository is just a chance for me to practice using GitHub while I refresh my memory and my examples are not perfect replications of the book's code examples.
+This repository is just a chance for me to practice using GitHub while I refresh my memory. 
+My examples are not perfect replications of the book's code examples and 
+I skip some examples that are pointless to type out like demonstrations of bad code practices.
 
