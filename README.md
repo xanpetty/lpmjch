@@ -6,3 +6,5 @@ This repository is just a chance for me to practice using GitHub while I refresh
 My examples are not perfect replications of the book's code examples and 
 I skip some examples that are pointless to type out like demonstrations of bad code practices.
 
+I've used a gitignore file so that login.php is not added to the repo.
+Instructions for creating login.php are on pg. 234 of the 4th edition. 
