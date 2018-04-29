@@ -50,7 +50,7 @@ _END;
 
     $rows = $result->num_rows;
 
-    for ($j = 0; $j < rows; ++$j)
+    for ($j = 0; $j < $rows; ++$j)
     {
         $result->data_seek($j);
         $row = $result->fetch_array(MYSQLI_NUM);
@@ -66,7 +66,7 @@ echo <<<_END
     <form action="sqltest.php" method="post">
         <input type="hidden" name="delete" value="yes">
         <input type="hidden" name="isbn" value="$row[4]">
-        <input type="submit" value"delete record">
+        <input type="submit" value="delete record">
     </form>
 _END;
 }
