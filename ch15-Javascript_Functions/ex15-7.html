@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function User(forename, username, password)
+      {
+        this.forename = forename
+        this.username = username
+        this.password = password
+
+        User.prototype.showUser = function()
+        {
+          document.write("Forename: " + this.forename + "<br>")
+          document.write("username: " + this.username + "<br>")
+          document.write("Password: " + this.password + "<br>")
+        }
+      }
+    </script>
+  </body>
+<html>
