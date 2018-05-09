@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Cross browser AJAX function</title>
+  </head>
+  <body>
+    <script>
+      function ajaxRequest()
+      {
+        try // non IE browser?
+        { // yes
+          var request = new XMLHttpRequest()
+        }
+        catch(e1)
+        {
+          try // 6+?
+          {
+              // yes
+              request = new ActiveXObject("Msxml2.XMLHTTP")
+          }
+          catch(e2)
+          {
+            try // IE 5?
+            {  // Yes
+              request = new ActiveXObject("Microsoft.XMLHTTP")
+            }
+            catch(e3) // there is no AJAX support
+            {
+              request = false
+            }
+          }
+        }
+        return request
+      }
+    </script>
+  </body>
+<html>
