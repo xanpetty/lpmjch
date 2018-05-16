@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using each</title>
+    <script src='jquery-1.11.1.min.js'></script>
+  </head>
+  <body>
+    <div id='info'></div>
+    <script>
+      pets =
+      {
+        Scratchy: 'guinea pig',
+        Squeeky:  'guinea pig',
+        Fluffy:   'rabbit',
+        Thumper:  'rabbit',
+        Snoopy:   'dog',
+        Tiddles:  'cat'
+      }
+
+      guineapigs = []
+
+      $.each(pets, function(name,type)
+      {
+        if (type == 'guinea pig') guineapigs.push(name)
+      })
+
+      $('#info').html('The guinea pig names are: ' + guineapigs.join(' & '))
+    </script>
+  </body>
+</html>
